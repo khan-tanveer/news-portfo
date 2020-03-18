@@ -1,0 +1,257 @@
+:root{
+    --colorBrown:#e08b6c;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header{
+    background-color: rgb(13, 238, 238);
+    color: black;
+    
+}
+.website-header{
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.website-header img{
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+}
+h1{
+    margin: auto 0;
+}
+.social-icon{
+    text-align: end;
+    flex: 1;
+}
+.social-icon i{
+    margin: 0 7px;
+    cursor: pointer;
+}
+.social-icon i:hover{
+    color: red;
+}
+nav{
+    background-color: black;
+    height: 50px;
+    margin-bottom: 20px;
+}
+ul{
+    margin: 20px;
+}
+.navbar-nav li{
+    padding: 10px 20px;
+}
+.navbar-nav li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.navbar-nav li a:hover{
+    color: var(--colorBrown);
+}
+.breaking-news-section{
+    padding: 0 30px 0 60px;
+    display: flex;
+}
+#btext{
+    width: 200px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--colorBrown);
+    font-weight: 600;
+    margin: auto 0;
+}
+.breaking-news{
+    padding: 0 30px;
+    color: black;
+    font-weight: 500;
+    display: inline-block;
+    height: 30px;
+}
+.breaking-news:hover{
+    color: var(--colorBrown);
+    cursor: pointer;
+}
+
+
+.bntime{
+    display: inline-block;
+    color: red;
+    padding: 0 10px;
+    font-size: 15px;
+}
+#popular-news{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 5%;
+}
+#popular-news img{
+    width: 100%;
+    filter: brightness(0.7);
+}
+#popular-news h2{
+    margin: 0;
+    padding: 5px;
+    color: #fff;
+}
+#featured h2{
+    background-color: black;
+}
+#latest h2{
+    background-color:red;
+}
+#our-picks h2{
+    background-color:darkblue ;
+}
+.carousel,.news-container{
+    position: relative;
+}
+.popular-news-text{
+    font-size: 14px;
+    position: absolute;
+    color: white;
+    z-index: 2;
+    bottom: 30px;
+    font-size: 24px;
+    font-weight: bolder;
+    padding:  0 10px ;
+    transition-duration: 500ms;
+
+}#featured{
+    flex: 2;
+}
+#latest,#our-picks{
+    flex: 1;
+}
+.news-container:hover{
+    cursor: pointer;
+}
+.news-container:hover > .popular-news-text{
+    bottom: 10px;
+}
+.more-news{
+    display: flex;
+    background-color: rgb(13, 238, 238);
+    justify-content: space-around;
+    color: black;
+    padding: 0 5%;
+    text-align: justify;
+}
+.news-section img{
+    width: 100%;
+
+}
+.news-section{
+    display: flex;
+    flex-basis: 70%;
+    justify-content: space-between;
+}
+aside{
+    flex-basis: 25%;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin: auto 0;
+    border-radius: 10px;
+}
+.world,.sport{
+    flex-basis: 45%;
+}
+.world h2{
+    background-color: #b2175b;
+    padding: 0 10px;
+    margin: 10px 0 0 0 ;
+}
+.sport h2{
+    background-color: #3c1b75;
+    padding: 0 10px;
+    margin: 10px 0 0 0 ;
+}
+.recent-news{
+    display: flex;
+    padding: 0 10px;
+    margin: 10px 0 0 0 ;
+
+}
+.recent-news img{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+.recent-news p{
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
+}
+.social-links{
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+}
+section{
+    flex-basis: 30%;
+}
+.instagram img{
+    padding: 5px;
+}
+.social-icon-footer{
+    font-size: 37px;
+    padding: 5px;
+    cursor: pointer;
+}
+.footer-button{
+    display: flex;
+    border: 1px solid #2196f3;
+    color: black;
+    font-size: 14px;
+    font-weight: bolder;
+    background-color: rgb(13, 238, 238);
+    margin: 20px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.footer-button:hover{
+    background-color:#2196f3;
+}
+.copyright{
+    width: 100%;
+    background-color:  rgb(13, 238, 238);
+    color: black;
+    font-size: 30px;
+    font-weight: 50em;
+    text-align: center;
+    padding: 5px;
+
+}
+@media only screen and(max-width:600px){
+    .website-header img{
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+    }
+    .website-header h1{
+        font-size: 15px;
+    }
+    .breaking-news-section{
+        padding: 10px;
+        flex-wrap: wrap;
+        height: 70px;
+    }
+    .navbar-toggler-icon{
+        background-image: url("images/menu.jpg");
+        
+    }
+    .navbar-collapse{
+        background-color: black;
+    }
+    #featured{
+        flex: auto;
+    }
+}
